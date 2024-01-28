@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f6f8ff;
+  --text-color: #4b6a9b;
+  --bg-card-color: #fefefe;
+  --bg-btn-color: #0079ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Space Mono', monospace;
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme_switcher {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme {
+  text-transform: uppercase;
+  color: var(--text-color);
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-card-color);
+  border-radius: 8px;
+  padding: 6px;
+  width: 100%;
+  margin-top: 35px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--bg-btn-color);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 15px 18px;
+  font-size: 14px;
+  font-weight: 700;
+}
