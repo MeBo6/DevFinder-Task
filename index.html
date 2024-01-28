@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Devfinder</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -20,8 +20,70 @@
     />
   </head>
   <body>
-    <nav>
-        <h1>devfinder</h1>
-    </nav>  
+    <header>
+      <h1 class="heading">devfinder</h1>
+
+      <div class="theme_switcher">
+        <p class="theme">dark</p>
+        <img src="./assets/moon.png" alt="moon icon" />
+      </div>
+    </header>
+    <div class="searchbar">
+      <img src="./assets/search.png" alt="search icon" />
+      <input type="text" placeholder="Search Github username.." />
+      <button type="button">Search</button>
+    </div>
+
+    <main>
+      <div class="info">
+        <img src="./assets/Oval.png" alt="" />
+        <div>
+          <h3>The Octocat</h3>
+          <p>@octocat</p>
+          <span>Joined 25 Jan 2011</span>
+        </div>
+      </div>
+      <p class="bio">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+        provident.
+      </p>
+
+      <div class="card">
+        <div>
+          <h3>Repos</h3>
+          <p>8</p>
+        </div>
+        <div>
+          <h3>Followers</h3>
+          <p>3938</p>
+        </div>
+        <div>
+          <h3>Following</h3>
+          <p>9</p>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="#">
+          <img src="./assets/pin.png" alt="website icon" width="18" />
+          <p>San Francisco</p>
+        </a>
+        <a href="#">
+          <img src="./assets/url.png" alt="linkedin icon" />
+          <p>https://github.blog</p>
+        </a>
+        <a href="#">
+          <img src="./assets/twitter.png" alt="twitter icon" />
+          <p>Not Available</p>
+        </a>
+        <a href="#">
+          <img
+            src="./assets/office-building.png"
+            alt="location icon"
+          />
+          <p>@github</p>
+        </a>
+      </div>
+    </main>
   </body>
 </html>
