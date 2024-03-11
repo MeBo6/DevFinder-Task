@@ -5,10 +5,21 @@
 }
 
 :root {
-  --bg-color: #f6f8ff;
-  --text-color: #4b6a9b;
-  --bg-card-color: #fefefe;
-  --bg-btn-color: #0079ff;
+  --bg-color: #fff;
+  --text-color: #222731;
+  --btn-color: #0079FF;
+}
+
+.dark-theme {
+  --text-color: #fff;
+  --bg-color: #141D2F;
+  --card-color: #1E2A47;
+}
+
+#dark-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
 
 body {
@@ -21,6 +32,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.heading {
+  color: var(--text-color);
 }
 
 .theme_switcher {
@@ -38,18 +53,19 @@ header {
 }
 
 .searchbar {
+  background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--bg-card-color);
   border-radius: 8px;
   padding: 6px;
   width: 100%;
   margin-top: 35px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  box-shadow: 2px 3px 8px rgba(70, 96, 187, 0.2);
 }
 
 input {
+  background-color: var(--card-color);
   outline: none;
   border: none;
   font-size: 16px;
@@ -60,7 +76,7 @@ input::placeholder {
 }
 
 button {
-  background-color: var(--bg-btn-color);
+  background-color: var(--btn-color);
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -69,14 +85,12 @@ button {
   font-weight: 700;
 }
 
-/* main styles*/
-
 main {
   margin-top: 15px;
   padding: 22px;
-  background-color: var(--bg-card-color);
+  background-color: var(--card-color);
   border-radius: 15px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  box-shadow: 2px 3px 8px rgba(70, 96, 187, 0.2);
 }
 
 .info {
@@ -84,11 +98,15 @@ main {
   gap: 20px;
 }
 
-.info > div > p {
-  color: var(--bg-btn-color);
+.info div h3 {
+  color: var(--text-color);
 }
 
-.info > div > span {
+.info div p {
+  color: var(--text-color);
+}
+
+.info div span {
   font-size: 13px;
   color: #697c9a;
 }
@@ -113,13 +131,13 @@ main {
   border-radius: 10px;
 }
 
-.card > div > h3 {
+.card div h3 {
   font-size: 13px;
 }
 
-.card > div > p {
+.card div p {
   font-weight: bold;
-  color: black;
+  color: var(--text-color);
 }
 
 .socials {
@@ -130,13 +148,13 @@ main {
   gap: 20px;
 }
 
-.socials > a {
+.socials a {
   display: flex;
   gap: 20px;
   text-decoration: none;
 }
 
-.socials > a > p {
+.socials a p {
   color: var(--text-color);
   font-size: 13px;
 }
@@ -163,7 +181,7 @@ main {
     padding: 6px;
     width: 50%;
     margin-top: 35px;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    box-shadow: 3px 3px 8px rgba(70, 96, 187, 0.2);
   }
 
   button {
@@ -212,7 +230,7 @@ main {
     color: #697c9a;
   }
 
-  .card > div > p {
+  .card div p {
     font-size: 22px;
   }
 
@@ -221,7 +239,7 @@ main {
     flex-direction: row;
     gap: 10%;
   }
-  .socials .socials1 > a {
+  .socials .socials1 a {
     margin-bottom: 10%;
     display: flex;
     gap: 20px;
@@ -229,7 +247,7 @@ main {
     color: var(--text-color);
   }
 
-  .socials .socials2 > a {
+  .socials .socials2 a {
     margin-bottom: 10%;
     display: flex;
     gap: 20px;
