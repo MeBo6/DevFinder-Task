@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="index.js" defer></script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -30,17 +31,17 @@
     </header>
     <div class="searchbar">
       <img src="./assets/search.png" alt="search icon" />
-      <input type="text" placeholder="Search Github username.." />
-      <button type="button">Search</button>
+      <input class="search-input" type="text" placeholder="Search Github username.." />
+      <button class="search-button" type="button">Search</button>
     </div>
 
     <main>
       <div class="info">
-        <img src="./assets/Oval.png" alt="" />
+        <img class="user-img" src="./assets/Oval.png" alt="" />
         <div>
-          <h3>The Octocat</h3>
-          <p>@octocat</p>
-          <span>Joined 25 Jan 2011</span>
+          <h3 class="user-name">The Octocat</h3>
+          <p class="at-user">@octocat</p>
+          <span class="joinDate">Joined 25 Jan 2011</span>
         </div>
       </div>
       <p class="bio">
@@ -51,22 +52,22 @@
       <div class="card">
         <div>
           <h3>Repos</h3>
-          <p>8</p>
+          <p class="repos">8</p>
         </div>
         <div>
           <h3>Followers</h3>
-          <p>3938</p>
+          <p class="followers">3938</p>
         </div>
         <div>
           <h3>Following</h3>
-          <p>9</p>
+          <p class="following">9</p>
         </div>
       </div>
 
       <div class="socials">
         <a href="#">
           <img src="./assets/pin.png" alt="website icon" width="18" />
-          <p>San Francisco</p>
+          <p class="city">San Francisco</p>
         </a>
         <a href="#">
           <img src="./assets/url.png" alt="linkedin icon" />

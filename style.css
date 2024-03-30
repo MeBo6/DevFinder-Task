@@ -140,3 +140,9 @@ main {
   color: var(--text-color);
   font-size: 13px;
 }
+
+.user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
